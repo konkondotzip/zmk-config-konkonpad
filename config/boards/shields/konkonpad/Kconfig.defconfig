@@ -1,0 +1,6 @@
+if SHIELD_KONKONPAD
+
+config ZMK_KEYBOARD_NAME
+  default "konkonpad"
+
+endif

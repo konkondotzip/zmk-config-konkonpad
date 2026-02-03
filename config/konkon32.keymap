@@ -43,6 +43,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <20 21>;
+        };
+
+        ctrl+alt+del {
+            bindings = <&kp LA(LC(DEL))>;
+            key-positions = <10 12 22>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

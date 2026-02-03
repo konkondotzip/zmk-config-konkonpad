@@ -47,28 +47,28 @@
 
         base {
             bindings = <
-&as Q  &as W  &as E  &kp R  &kp T        &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G        &kp H        &kp J  &kp K      &kp L    &kp BACKSPACE
-&kp Z  &kp X  &kp C  &kp V  &kp B        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&as Q  &as W  &as E  &as R  &as T        &as Y        &as U  &as I      &as O    &as P
+&as A  &as S  &as D  &as F  &as G        &as H        &as J  &as K      &as L    &as BACKSPACE
+&as Z  &as X  &as C  &as V  &as B        &as N        &as M  &as COMMA  &as DOT  &as SLASH
                             &lt 1 SPACE  &lt 2 ENTER
             >;
         };
 
         sym {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans
+&as kp LA(Q) &kp LA(MINUS) &kp LA(E) &trans   &kp RA(N8) &kp RA(N9) &as LBKT  &kp LA(NUBS) &as SEMI  &kp LA(RBKT)
+&as QUOT     &as MINUS     &trans    &as GRAV &kp RA(N7) &kp RA(N0) &as EQUAL &as NUBS     &as RBKT  &as NUHS
+&as N1       &as N2        &as N3    &as N4   &as N5     &as N6     &as N7    &as N8       &as N9    &as N0     
+                                              &trans     &trans
             >;
         };
 
         mods {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans
+&kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6   &kp F7    &kp F8    &kp F9    &kp F10
+&kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp F11   &kp F12  &sk LSFT  &sk LCTL  &sk LALT  &kp DEL
+&kp HOME  &kp PGDN  &kp PGUP  &kp END   &kp CAPS  &kp INS  &kp PRSC  &kp PAUS  &sk RALT  &sk LGUI
+                                          &trans  &trans
             >;
         };
     };

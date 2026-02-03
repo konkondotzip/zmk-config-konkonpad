@@ -1,0 +1,8 @@
+file_format: "1"
+id: konkon32
+name: konkon32
+type: shield
+url: https://github.com/konkondotzip/zmk-config-konkonpad/tree/konkon32
+requires: [pro_micro]
+features:
+  - keys

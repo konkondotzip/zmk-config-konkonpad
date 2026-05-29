@@ -47,12 +47,12 @@
 
   joystick: joystick_mouse {
         compatible = "zmk,analog-input";
-        sampling-interval-ms = <10>;
+        sampling-hz = <100>;
         
         // Nutze die analogen Pins des nice!nano (nRF52840)
         // Achte darauf, dass die Kanäle (0, 1, 2) zu deinen Pins passen
-        x-ch = <&adc 7>; 
-        y-ch = <&adc 5>; 
+        x-ch = <&adc 7>; /* Entspricht z.B. P0.02 / A0 */
+        y-ch = <&adc 5>; /* Entspricht z.B. P0.03 / A1 */
         
         // Einstellungen für tote Zonen und Empfindlichkeit
         deadzone = <100>;

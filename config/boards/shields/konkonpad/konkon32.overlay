@@ -50,7 +50,7 @@
     sampling-hz = <100>;
 
     x-ch {
-        io-channels = <&adc 7>;
+        io-channels = <&adc 4>;
 
         mv-mid = <1650>;
         mv-min-max = <1600>;

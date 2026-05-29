@@ -45,36 +45,17 @@
     >;
   };
 
-  anin0: analog_input_0 {
-		compatible = "zmk,analog-input";
-		sampling-hz = <100>;
-		x-ch {
-			io-channels = <&adc 7>;
-			mv-mid = <1630>;
-			mv-min-max = <1600>;
-			mv-deadzone = <10>;
-			scale-multiplier = <1>;
-			scale-divisor = <70>;
-			invert;
-			evt-type = <INPUT_EV_REL>;
-			input-code = <INPUT_REL_X>;
-		};
-		y-ch {
-			io-channels = <&adc 5>;
-			mv-mid = <1630>;
-			mv-min-max = <1600>;
-			mv-deadzone = <10>;
-			scale-multiplier = <3>;
-			scale-divisor = <4>;
-			invert;
-			evt-type = <INPUT_EV_REL>;
-			input-code = <INPUT_REL_Y>;
-
-			/* enable report mdoe for gamepad axix or knob */
-			/* to only call input_report on quantquantized value is updated */
-			/* NOTE: mouse input does NOT need this */
-			/* report-on-change-only; */
-
-		};
-	};
+  joystick: joystick_mouse {
+        compatible = "zmk,analog-input";
+        sampling-interval-ms = <10>;
+        
+        // Nutze die analogen Pins des nice!nano (nRF52840)
+        // Achte darauf, dass die Kanäle (0, 1, 2) zu deinen Pins passen
+        x-ch = <&adc 7>; 
+        y-ch = <&adc 5>; 
+        
+        // Einstellungen für tote Zonen und Empfindlichkeit
+        deadzone = <100>;
+        sensitivity = <10>;
+    };
 };

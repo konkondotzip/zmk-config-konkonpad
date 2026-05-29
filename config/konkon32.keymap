@@ -111,10 +111,4 @@
             then-layer = <3>;
         };
     };
-
-    analog_input_il {
-		compatible = "zmk,input-listener";
-		device = <&anin0>;
-                input-processors = <&zip_fwd_to_hid_io>;
-	};
 };

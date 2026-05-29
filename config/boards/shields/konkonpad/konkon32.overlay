@@ -1,6 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
+&adc {
+  status = "okay";
+};
+
 / {
   chosen {
     zmk,kscan = &default_kscan;

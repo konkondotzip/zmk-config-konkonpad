@@ -1,0 +1,8 @@
+file_format: "1"
+id: keykon57
+name: keykon57
+type: shield
+url: https://github.com/konkondotzip/zmk-config-konkonpad/tree/keykon57
+requires: [pro_micro]
+features:
+  - keys

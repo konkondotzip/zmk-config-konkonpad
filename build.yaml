@@ -20,4 +20,4 @@
 ---
 include:
   - board: nice_nano
-    shield: konkon32
+    shield: keykon57
